@@ -14,7 +14,7 @@ const autoCompleteConfig = {
         return movie.Title;
     },
     async fetchData(searchTerm){
-        const response = await axios.get('http://www.omdbapi.com/',
+        const response = await axios.get('https://www.omdbapi.com/',
         {
            params: {
                apikey: 'd3fbed20',
@@ -54,7 +54,7 @@ let rightMovie; //to store details on the left movie selected
 
 //Helper function to make a followup request after searching for a particular movie
 const onMovieSelect = async (movie, summaryElement, side) => {
-    const response = await axios.get('http://www.omdbapi.com/',
+    const response = await axios.get('https://www.omdbapi.com/',
     {
        params: {
            apikey: 'd3fbed20',
